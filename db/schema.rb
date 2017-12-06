@@ -16,10 +16,11 @@ ActiveRecord::Schema.define(version: 20171204220010) do
   enable_extension "plpgsql"
 
   create_table "stats", force: :cascade do |t|
-    t.integer  "number"
-    t.date     "since"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "name"
+    t.integer  "classes_taken"
+    t.date     "member_since"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end
